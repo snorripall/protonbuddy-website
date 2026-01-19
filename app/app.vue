@@ -19,8 +19,8 @@ useSeoMeta({
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: 'https://protonbuddy.com/og-image.png', // Placeholder - replace with actual image
-  twitterImage: 'https://protonbuddy.com/og-image.png', // Placeholder - replace with actual image
+  ogImage: `${useRuntimeConfig().public.siteUrl}/og-image.png`,
+  twitterImage: `${useRuntimeConfig().public.siteUrl}/og-image.png`,
   twitterCard: 'summary_large_image'
 })
 </script>
@@ -34,18 +34,16 @@ useSeoMeta({
         </NuxtLink>
       </template>
 
-      <template #right>
-        <UColorModeButton />
-
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
+       <template #right>
+         <UButton
+           to="https://github.com/nuxt-ui-templates/starter"
+           target="_blank"
+           icon="i-simple-icons-github"
+           aria-label="GitHub"
+           color="neutral"
+           variant="ghost"
+         />
+       </template>
     </UHeader>
 
     <UMain>
