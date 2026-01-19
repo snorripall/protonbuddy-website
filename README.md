@@ -125,7 +125,3 @@ protonbuddy-website/
 3. Make your changes
 4. Test locally
 5. Submit a pull request
-
-## License
-
-© 2026 Proton Buddy. Built for Linux gamers.
